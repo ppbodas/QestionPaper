@@ -1,0 +1,10 @@
+<h1>Listing papers</h1>
+<%@papers.each do |paper|%>
+<%=paper.id%>
+<%=link_to 'Show', paper_path(:id => paper.id)%>
+<%= link_to 'Destroy', paper, method: :delete, data: { confirm: 'Are you sure?' } %>
+<br>
+<%end%>
+<br>
+
+<%= link_to 'New Paper', new_paper_path %>

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+<%= form_tag(result_show_path) do%>
+	<%@questions.each do |question|%>
+		<h3><%=question.body%> </h3>
+		<%=check_box_tag question.id.to_s + "." + "1", 'checked1'%><%=question.option1%></br>
+		<%=check_box_tag question.id.to_s + "." + "2", 'checked2'%><%=question.option2%></br>
+		<%=check_box_tag question.id.to_s + "." + "3", 'checked3'%><%=question.option3%></br>
+		<%=check_box_tag question.id.to_s + "." + "4", 'checked4'%><%=question.option4%></br>
+	<%end%>
+	<%= submit_tag 'Submit'%>
+<%end%>
+
+<%= link_to 'Back', papers_path %>

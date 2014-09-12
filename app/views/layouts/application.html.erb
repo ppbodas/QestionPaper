@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QestionPaper</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="content">
+
+  <div id="header"> 
+    <div id="title"> 
+      <h1>GATE Question Bank</h1>
+    </div>
+    <%=image_tag "header_left.jpg" %>
+  </div>
+
+  <div id="mainMenu">
+    <ul class="floatLeft">
+      <li><%=link_to "Questions", questions_path %></li>
+      <li><%=link_to "Papers", papers_path %></li>   
+      <li><%=link_to "Question Bank", questionbank_path %></li>   
+    </ul>
+  </div>
+
+  <div id="page">
+
+    <div class="width25 floatRight leftColumn">
+
+      <ul class="sideMenu">
+
+        <li class="here">Menu
+          <ul>
+            <li><%=link_to "Questions", questions_path %></li>
+      		<li><%=link_to "Papers", papers_path %></li>
+      		<li><%=link_to "Question Bank", questionbank_path %></li>  
+          </ul>
+        </li>
+      </ul>
+
+<h2>News</h2>
+      <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      </p>
+
+      <p align="right">
+<a href="">Read more...</a>
+      </p>
+
+    </div>
+    <div class="width75 floatLeft">
+	  	<div class="gradient">
+			<%= yield %>
+		</div>
+	</div>
+
+</div>
+
+  </div>
+
+</div>
+<div id="footer">
+
+  <div id="width"> <span class="floatLeft"> Copyright © 2006 </span> <span class="floatRight"> 
+    <a href="">home</a> <span class="grey">|</span> <a href="">about us</a> <span class="grey">|</span> 
+    <a href="">news</a> <span class="grey">|</span> <a href="">contact</a> <span class="grey">|</span> 
+    <a href="">links</a> </span> </div>
+
+</div>
+
+<!-- Designed by DreamTemplate. Please leave link unmodified. -->
+<br><center><a href="http://www.dreamtemplate.com" title="Website Templates" target="_blank">Website templates</a></center>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<h1>Question Listing</h1>
+<hr>
+<%@questions.each do |question|%>
+	<h3>
+		<%=question.body%>
+	</h3>
+	<%=button_to 'Add to paper', paper_items_path(:question_id => question)%>	
+	<hr>
+<%end%>

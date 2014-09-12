@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paper:</strong>
+  <%= @paper_item.paper_id %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @paper_item.question_id %>
+</p>
+
+<%= link_to 'Edit', edit_paper_item_path(@paper_item) %> |
+<%= link_to 'Back', paper_items_path %>
