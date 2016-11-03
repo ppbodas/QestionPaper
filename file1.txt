@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 Changing same line
+=======
+Changing file 1
+>>>>>>> Stashed changes
